@@ -18,13 +18,12 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
         .img1{
-            height: 45px;
-            width: 55px;
+            height: 75px;
+            width: 85px;
         }
         .img2{
-            height: 350px;
-            width: 350px;
-            border: 2px solid #F7D3BE;
+            height: 30px;
+            width: 35px;
         }
         .imagen{
             text-align: center;
@@ -43,7 +42,7 @@
         }
     </style>
         <script type="text/javascript">
-            var ano = "2022";
+            var ano = "2015";
             var autenticacion = true;
             
             while(autenticacion)
@@ -51,10 +50,9 @@
                 var userano = window.prompt("Indica el año de la foto anterior: ")
                 if( userano == ano)
                 {
-                    alert("¡CORRECTO! Continuamos con el juego");
+                    alert("¡CORRECTO! Seguimos jugando");
                     autenticacion = false;
                 }
-                
                 else
                 {
                     alert("¡INCORRECTO! Tienes otro intento");
@@ -65,18 +63,16 @@
 
 <body>
     <header>
-        <h2>Ahora vamos a aumentar la dificultad</h2>
+        <h2>¡Enhorabuena, has superado el juego!<img class="img2" src="https://github.com/francastev/francastev.github.io/blob/main/aplausos.gif?raw=true"></h2>
     </header>
 	<section class="imagen">
-		<img class="img2" src="https://github.com/francastev/francastev.github.io/blob/main/foto2.jpg?raw=true">
 	</section>
     <section class="section2">
-        <a href="https://francastev.github.io/page5.html"><img class="img1" src="https://github.com/francastev/francastev.github.io/blob/main/flecha.png?raw=true"></a>
+        <a href="XXXXXXXX"><img class="img1" src="https://github.com/francastev/francastev.github.io/blob/main/flecha.png?raw=true"></a>
+        <h3>La contraseña para descubrir tu regalo es la suma de todos los años de las fotos anterior</h3>
     </section>
     <footer>
 	    <p>&copy; Fco José Castellano Vega - 18/07/2023</p>
     </footer>
 </body>
 </html>
-
-
