@@ -14,17 +14,20 @@
             padding: 10px;
             text-align: center;
             color: #F7D3BE;
-            font-size: 200%;
+            font-size: 150%;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        img{
-            height: 300px;
-            width: 450px;
+        .img1{
+            height: 45px;
+            width: 55px;
+        }
+        .img2{
+            height: 350px;
+            width: 350px;
             border: 2px solid #F7D3BE;
         }
         .imagen{
-            display: flex;
-            justify-content: center;
+            text-align: center;
         }
         .section2{
             padding: 10px;
@@ -39,39 +42,41 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
     </style>
-    <script type="text/javascript">
-        var password = "32070718R";
-        var autenticacion = true;
-        
-        while(autenticacion)
-        {
-            var userpass = window.prompt("Es necesario confirmar tu identidad. Porfavor, introduzca tu DNI:")
-            if( userpass == password)
-            {
-                alert("Identidad confirmada. Bienvenida");
-                autenticacion = false;
-            }
+        <script type="text/javascript">
+            var ano = "2022";
+            var autenticacion = true;
             
-            else
+            while(autenticacion)
             {
-                alert("ERROR: Identidad no autorizada.");
+                var userano = window.prompt("Indica el año de la foto anterior: ")
+                if( userano == ano)
+                {
+                    alert("¡CORRECTO! Continuamos con el juego");
+                    autenticacion = false;
+                }
+                
+                else
+                {
+                    alert("¡INCORRECTO! Tienes otro intento");
+                }
             }
-        }
-        </script>
+            </script>
 </head>
 
 <body>
     <header>
-        <h1> ¡Sorpresa! </h1>
+        <h2>Ahora vamos a aumentar la dificultad</h2>
     </header>
 	<section class="imagen">
-		<a href="https://francastev.github.io/page2.html"><img src="https://github.com/francastev/francastev.github.io/blob/main/img_portada.jpg?raw=true"></a>
+		<img class="img2" src="https://github.com/francastev/francastev.github.io/blob/main/foto1.jpg?raw=true">
 	</section>
     <section class="section2">
-        <h3>Haz click sobre la imagen para descubrir tu regalo</h3>
+        <img class="img1" src="https://github.com/francastev/francastev.github.io/blob/main/flecha.png?raw=true">
     </section>
     <footer>
 	    <p>&copy; Fco José Castellano Vega - 18/07/2023</p>
     </footer>
 </body>
 </html>
+
+
